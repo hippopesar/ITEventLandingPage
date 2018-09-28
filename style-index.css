@@ -1,8 +1,8 @@
 body {
     margin: 0;
     height: 100%;
-    background-color: silver;
-    background-image: url("clndr.png");
+    background-color:black;
+    background-image: url("computer.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -16,7 +16,7 @@ body {
     background-color: rgba(228, 61, 10, 0.8);
     border: 1px solid red;
     position: absolute;
-    top: 10px;
+    top: 30%;
     width: 100%;
     transition: all 1s;
 }
