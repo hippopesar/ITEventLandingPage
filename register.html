@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Register</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="style-register.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <span>Registeration</span>
+    </header>
+
+    <main>
+        <fieldset>
+            <legend id="form-legend">Fill in your information below ...</legend><br>
+            <form method="POST">
+                First Name:<br>
+                <input type="text" name="firstname" required><br><br>
+                Last Name: <br>
+                <input type="text" name="lastname" required><br><br>
+                Email: <br>
+                <input type="email" name="email" required><br><br>
+                Preferred Date:<br>
+                <select required>  
+                    <option name="day" value=""> Select ... </option>                  
+                    <option name="day" value="monday">Moday, Spetember 10, 2018</option>
+                    <option name="day" value="wednesday">Wednesday, Spetember 12, 2018</option>
+                    <option name="day" value="friday">Firday, Spetember 14, 2018</option>
+                </select><br><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </fieldset>
+
+    </main>
+    <footer>Copy Right: &copy; Hippo - </footer>
+</body>
+
+<script type="text/javascript">
+    window.onload = function (e) {
+        document.getElementsByTagName('footer')[0].innerHTML += (new Date()).getFullYear();
+    };
+</script>
+
+</html>
