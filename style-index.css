@@ -16,7 +16,7 @@ body {
     background-color: rgba(228, 61, 10, 0.8);
     border: 1px solid red;
     position: absolute;
-    top: 30%;
+    top: 250px;
     width: 100%;
     transition: all 1s;
 }
