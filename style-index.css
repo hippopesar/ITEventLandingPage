@@ -1,7 +1,7 @@
 body {
     margin: 0;
     height: 100%;
-    background-color:black;
+    background-color: black;
     background-image: url("computer.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,25 +10,40 @@ body {
 
 #flex-box {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;    
     justify-content: center;
-    background-color: rgba(228, 61, 10, 0.8);
-    border: 1px solid red;
-    position: absolute;
-    top: 2.5rem;
-    width: 100%;
-    transition: all 1s;
+    position: absolute;    
+    width: 100%;    
+    margin-top: 5%;
+    flex-wrap: nowrap;
 }
+    
 
 a {
     padding: 1% 50%;
-    font-size: 1.5rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4vw;
+    font-family: sans-serif;
     color: white;
     text-decoration: none;
+    background-color: rgba(228, 61, 10, 0.8);    
+    border: 1px solid red;
+    transition: all 1s;
+    animation: textturn 0.8s linear infinite alternate;
+}
+a:hover {
+    transform: scale(1.5);
+    animation: backwards;
 }
 
-#flex-box:hover {
-    transform: scale(1.5);
+h1 {
+    font-family: sans-serif;
+    font-size: 5vw;
+    color: white;
+    background-color: transparent; 
+}
+
+@keyframes textturn {
+    from {color: white} 
+    to {color: rgba(228, 61, 10, 0.8);}
 }
